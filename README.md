@@ -1,5 +1,5 @@
 # Example .NET 8 Enterprise Event Driven Backend System
-A sample asynchronous n-tier system written with .NET 8 and C# using both SQL and MongoDb databases.
+This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 and C# using both SQL and MongoDb databases with a full suite of example enterprise features while following SOLID principals.
 
 - Presentation layer (Main REST API)
   - `Swagger` documentation using in-code `XML` comments
@@ -11,6 +11,7 @@ A sample asynchronous n-tier system written with .NET 8 and C# using both SQL an
 ### TODO:
   - Logging to an ELK stack/logging cloud provider
   - Automated registering of DI services
+  - Cache
   - Authentication with JWT
   - SignalR browser notifications
   - File Streaming Endpoint Example
