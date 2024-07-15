@@ -8,12 +8,12 @@ This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 a
   - `Swagger` documentation using in-code `XML` comments
   - Error-handling middleware
   - Fine-tuned logging to files and console using `Serilog` : https://serilog.net/
-  - Customized `StyleCop` linting implementation : https://github.com/DotNetAnalyzers/StyleCopAnalyzers
+  - Customized solution-wide `StyleCop` linter : https://github.com/DotNetAnalyzers/StyleCopAnalyzers
   - TODO: Cache that rehydrates on startup using .NET's `Memory Cache` : https://learn.microsoft.com/en-us/dotnet/core/extensions/caching  
   - TODO: Automated registering of DI services
   - TODO: Authentication with JWT
   - TODO: Model validation with `FluentValidation` : https://docs.fluentvalidation.net/en/latest/
-  - TODO: `gRPC` microservices with pub/sub communication using  
+  - TODO: `gRPC` microservices with pub/sub communication using `RabbitMQ` : https://www.rabbitmq.com/ 
   - TODO: Logging to an ELK stack/logging cloud provider
   - TODO: Real-time browser notifications using `SignalR` : https://learn.microsoft.com/en-us/aspnet/signalr/overview/getting-started/introduction-to-signalr 
   - TODO: File Streaming Endpoint Example
