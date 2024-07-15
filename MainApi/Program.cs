@@ -39,11 +39,11 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Main REST Api", 
+        Title = "Main REST Api",
         Version = "v1",
         Description = "Does some stuff."
     });
-    
+
     // include XML comments file
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);

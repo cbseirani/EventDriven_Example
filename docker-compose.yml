@@ -7,10 +7,15 @@
     environment:
       - MONGO_CONNSTRING=mongodb://root:example@mongo:27017
       - SQL_CONNSTRING=Server=sqlserver;Database=master;User=sa;Password=YourStrong!Passw0rd
+      - RABBITMQ_CONNSTRING=amqp://guest:guest@rabbitmq:5672/
+      - REDIS_CONNSTRING=redis://redis:6379
     ports:
       - "8080:8080"
     depends_on:
       - mongo
+      - sqlserver
+      - rabbitmq
+      - redis
 
   mongo:
     image: mongo:latest
@@ -31,6 +36,20 @@
       - "1433:1433"
     volumes:
       - sqlserver_data:/var/opt/mssql
+
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+        
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
 
 volumes:
   mongodb_data:

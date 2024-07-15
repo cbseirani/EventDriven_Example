@@ -39,4 +39,8 @@
       <ProjectReference Include="..\Repositories\Repositories.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Remove="stylecop.json" />
+    </ItemGroup>
+
 </Project>
