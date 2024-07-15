@@ -7,7 +7,7 @@ public static class ServicesExtensions
 {
     public static void ConfigureMongoDatabase(this IServiceCollection services, IConfiguration configuration)
     {
-        var dbConnString = configuration.GetSection("DBCONNSTRING").Value ?? string.Empty;
+        var dbConnString = configuration.GetSection("MONGO_CONNSTRING").Value ?? string.Empty;
 
         services.AddSingleton(typeof(IMongoClient), new MongoClient(dbConnString));
         services.AddSingleton(typeof(IMongoDatabase), x =>
@@ -31,5 +31,6 @@ public static class ServicesExtensions
     
     public static void ConfigureSqlDatabase(this IServiceCollection services, IConfiguration configuration)
     {
+        var dbConnString = configuration.GetSection("SQL_CONNSTRING").Value ?? string.Empty;
     }
 }

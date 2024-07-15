@@ -5,8 +5,8 @@
       context: .
       dockerfile: MainApi/Dockerfile
     environment:
-      - DBCONNSTRING=mongodb://root:example@mongo:27017
-      - SQLCONNSTRING=Server=sqlserver;Database=master;User=sa;Password=YourStrong!Passw0rd
+      - MONGO_CONNSTRING=mongodb://root:example@mongo:27017
+      - SQL_CONNSTRING=Server=sqlserver;Database=master;User=sa;Password=YourStrong!Passw0rd
     ports:
       - "8080:8080"
     depends_on:

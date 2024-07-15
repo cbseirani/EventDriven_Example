@@ -23,8 +23,9 @@ Log.Logger = new LoggerConfiguration()
 builder.Services.AddSingleton(Log.Logger);
 builder.Services.AddSingleton(typeof(IConfiguration), builder.Configuration);
 
-// configure and register mongo DB beat sheet collection for DI
+// configure and register mongo and SQL dbs for DI
 builder.Services.ConfigureMongoDatabase(builder.Configuration);
+builder.Services.ConfigureSqlDatabase(builder.Configuration);
 
 // register services/repositories for DI
 builder.Services.AddTransient<IExceptionService, ExceptionService>();

@@ -35,6 +35,7 @@
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
+        "DBCONNSTRING": "mongodb://localhost:27017/",
         "DBCONNSTRING": "mongodb://localhost:27017/"
       }
     }
