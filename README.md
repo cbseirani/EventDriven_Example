@@ -1,7 +1,7 @@
 # Example .NET 8 Enterprise Event Driven Backend System
 This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 and C# using both SQL and MongoDb databases with a full suite of example enterprise features while following SOLID principals.
 
-### Presentation layer (Main REST API)
+### Main REST API
   - `Swagger` documentation using in-code `XML` comments
   - Error-handling middleware
   - Fine-tuned logging to files and console using `Serilog` : https://serilog.net/
