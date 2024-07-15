@@ -5,8 +5,10 @@ This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 a
   - `Swagger` documentation using in-code `XML` comments
   - Error-handling middleware
   - Fine-tuned logging to files and console using `Serilog` : https://serilog.net/
-  - Customized `StyleCop` linting implementation : https://github.com/DotNetAnalyzers/StyleCopAnalyzers
-  - `IoC` with `dependency injection` and `n-tier` pattern
+  - TODO: Customized `StyleCop` linting implementation : https://github.com/DotNetAnalyzers/StyleCopAnalyzers
+  - TODO: Cache
+  - TODO: Automated registering of DI services
+  - TODO: Authentication with JWT
 
 ### MongoDB database 
   - Website/API gathered content
@@ -18,9 +20,6 @@ This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 a
  
 ## TODO:
   - Logging to an ELK stack/logging cloud provider
-  - Automated registering of DI services
-  - Cache
-  - Authentication with JWT
   - SignalR browser notifications
   - File Streaming Endpoint Example
   - Http request retry policies
