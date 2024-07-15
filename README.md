@@ -13,7 +13,15 @@ This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 a
   - TODO: Automated registering of DI services
   - TODO: Authentication with JWT
   - TODO: Model validation with `FluentValidation` : https://docs.fluentvalidation.net/en/latest/
-  - TODO: `gRPC` microservices with pub/sub communication using 
+  - TODO: `gRPC` microservices with pub/sub communication using  
+  - TODO: Logging to an ELK stack/logging cloud provider
+  - TODO: Real-time browser notifications using `SignalR` : https://learn.microsoft.com/en-us/aspnet/signalr/overview/getting-started/introduction-to-signalr 
+  - TODO: File Streaming Endpoint Example
+  - TODO: Backend service web crawler
+  - TODO: WebCrawler throttler
+  - TODO: Http request and retry policies using `Flurl` and `Polly` : https://flurl.dev/docs/fluent-http/ https://www.pollydocs.org/
+  - TODO: Unit tests with xUnit
+  - TODO: Something with AI?
 
 ### MongoDB database 
   - TODO: Website/API gathered content
@@ -22,18 +30,6 @@ This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 a
   - TODO: Background thread settings and reporting 
 
 ### `Dockerfile` and `docker-compose.yml` files to stand up all resources locally
- 
-## TODO:
-  - Logging to an ELK stack/logging cloud provider
-  - SignalR browser notifications
-  - File Streaming Endpoint Example
-  - Http request retry policies
-  - Backend Thread/service examples
-  - Thread throttling examples
-  - 2 code-first 
-  - OpenAI service integration
-  - Unit tests with xUnit
-  - React UI
 
 ## Running Locally
 
