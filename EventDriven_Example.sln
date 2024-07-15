@@ -23,9 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayer", "LogicLayer\Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundProcesses", "BackgroundProcesses\BackgroundProcesses.csproj", "{521D3259-7699-4E2F-A97C-6F66E86DC409}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerTests", "ControllerTests\ControllerTests.csproj", "{CDA0D382-ED68-4FCC-AF03-BD86729FD9AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApi.Tests", "MainApi.Tests\MainApi.Tests.csproj", "{CDA0D382-ED68-4FCC-AF03-BD86729FD9AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayerTests", "LogicLayerTests\LogicLayerTests.csproj", "{01589B83-2D00-41D8-8557-1421520D73E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayer.Tests", "LogicLayer.Tests\LogicLayer.Tests.csproj", "{01589B83-2D00-41D8-8557-1421520D73E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

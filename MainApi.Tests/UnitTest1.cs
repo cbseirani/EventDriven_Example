@@ -1,4 +1,4 @@
-namespace LogicLayerTests;
+namespace MainApi.Tests;
 
 public class UnitTest1
 {

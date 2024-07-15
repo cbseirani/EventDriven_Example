@@ -1,4 +1,4 @@
-namespace ControllerTests;
+namespace LogicLayer.Tests;
 
 public class UnitTest1
 {
