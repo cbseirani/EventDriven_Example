@@ -5,9 +5,9 @@ This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 a
   - `Swagger` documentation using in-code `XML` comments
   - Error-handling middleware
   - Fine-tuned logging to files and console using `Serilog` : https://serilog.net/
-  - Customized StyleCop linting implementation : https://github.com/DotNetAnalyzers/StyleCopAnalyzers
+  - Customized `StyleCop` linting implementation : https://github.com/DotNetAnalyzers/StyleCopAnalyzers
   - `IoC` with `dependency injection` and `n-tier` pattern
-  - Dockerfile and docker-compose included
+  - `Dockerfile` and `docker-compose.yml` to stand up all resources locally
 
 ### TODO:
   - Logging to an ELK stack/logging cloud provider

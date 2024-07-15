@@ -6,6 +6,7 @@
       dockerfile: MainApi/Dockerfile
     environment:
       - DBCONNSTRING=mongodb://root:example@mongo:27017
+      - SQLCONNSTRING=Server=sqlserver;Database=master;User=sa;Password=YourStrong!Passw0rd
     ports:
       - "8080:8080"
     depends_on:
@@ -20,6 +21,17 @@
       - "27017:27017"
     volumes:
       - mongodb_data:/data/db
+        
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong!Passw0rd
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
 
 volumes:
   mongodb_data:
+  sqlserver_data:
