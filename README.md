@@ -1,15 +1,22 @@
 # Example .NET 8 Enterprise Event Driven Backend System
 This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 and C# using both SQL and MongoDb databases with a full suite of example enterprise features while following SOLID principals.
 
-- Presentation layer (Main REST API)
+### Presentation layer (Main REST API)
   - `Swagger` documentation using in-code `XML` comments
   - Error-handling middleware
   - Fine-tuned logging to files and console using `Serilog` : https://serilog.net/
   - Customized `StyleCop` linting implementation : https://github.com/DotNetAnalyzers/StyleCopAnalyzers
   - `IoC` with `dependency injection` and `n-tier` pattern
-  - `Dockerfile` and `docker-compose.yml` to stand up all resources locally
 
-### TODO:
+### MongoDB database 
+  - Website/API gathered content
+
+### Sql Server Express database
+  - Background thread settings and reporting 
+
+### `Dockerfile` and `docker-compose.yml` files to stand up all resources locally
+ 
+## TODO:
   - Logging to an ELK stack/logging cloud provider
   - Automated registering of DI services
   - Cache
@@ -20,9 +27,7 @@ This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 a
   - Backend Thread/service examples
   - Thread throttling examples
   - 2 code-first gRPC microservices with pub/sub communication
-  - MongoDB document db
-  - SQL db
-  - AI service integration
+  - OpenAI service integration
   - Unit tests with xUnit
 
 ## Running Locally
