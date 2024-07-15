@@ -1,0 +1,6 @@
+﻿services:
+  mainapi:
+    image: mainapi
+    build:
+      context: .
+      dockerfile: MainApi/Dockerfile
