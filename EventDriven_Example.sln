@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Unit Tests", "5 - Unit 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayer", "LogicLayer\LogicLayer.csproj", "{1CD85F8C-8953-4490-9446-8B92D41FA1A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundThreads", "BackgroundThreads\BackgroundThreads.csproj", "{521D3259-7699-4E2F-A97C-6F66E86DC409}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundProcesses", "BackgroundProcesses\BackgroundProcesses.csproj", "{521D3259-7699-4E2F-A97C-6F66E86DC409}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerTests", "ControllerTests\ControllerTests.csproj", "{CDA0D382-ED68-4FCC-AF03-BD86729FD9AE}"
 EndProject
