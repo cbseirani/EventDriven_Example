@@ -1,5 +1,5 @@
 ﻿namespace BackgroundProcesses;
 
-public class Class1
+public class WebCrawler
 {
 }

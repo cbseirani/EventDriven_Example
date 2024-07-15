@@ -3,6 +3,7 @@ using System.Text.Json.Serialization;
 using Infrastructure.Extensions;
 using LogicLayer;
 using LogicLayer.Implementation;
+using MainApi.Extensions;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
@@ -23,14 +24,12 @@ builder.Services.AddSingleton(Log.Logger);
 builder.Services.AddSingleton(typeof(IConfiguration), builder.Configuration);
 
 // configure and register mongo DB beat sheet collection for DI
-//builder.Services.ConfigureDatabase(builder.Configuration);
+builder.Services.ConfigureDatabase(builder.Configuration);
 
 // register services/repositories for DI
 builder.Services.AddTransient<IExceptionService, ExceptionService>();
-// builder.Services.AddTransient<IBeatService, BeatService>();
-// builder.Services.AddTransient<IActService, ActService>();
-// builder.Services.AddSingleton<IAiService, AiService>();
-// builder.Services.AddSingleton<IBeatSheetRepository, BeatSheetRepository>();
+
+// register background services
 
 // register controllers and swagger
 builder.Services.AddControllers();

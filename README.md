@@ -4,7 +4,8 @@ This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 a
 - Presentation layer (Main REST API)
   - `Swagger` documentation using in-code `XML` comments
   - Error-handling middleware
-  - Logging to files and console using `Serilog`
+  - Fine-tuned logging to files and console using `Serilog` : https://serilog.net/
+  - Customized StyleCop linting implementation : https://github.com/DotNetAnalyzers/StyleCopAnalyzers
   - `IoC` with `dependency injection` and `n-tier` pattern
   - Dockerfile and docker-compose included
 
@@ -21,6 +22,7 @@ This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 a
   - 2 code-first gRPC microservices with pub/sub communication
   - MongoDB document db
   - SQL db
+  - AI service integration
   - Unit tests with xUnit
 
 ## Running Locally
