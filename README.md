@@ -1,20 +1,25 @@
-# Example .NET 8 Enterprise Event Driven Backend System
+# Example .NET 8 Enterprise Event-Driven Backend System
 This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 and C# using both SQL and MongoDb databases with a full suite of example enterprise features while following SOLID principals.
 
-### Main REST API
+### Main UI
+  - TODO: React UI
+
+### Main REST api and 2 gRPC microservices
   - `Swagger` documentation using in-code `XML` comments
   - Error-handling middleware
   - Fine-tuned logging to files and console using `Serilog` : https://serilog.net/
-  - TODO: Customized `StyleCop` linting implementation : https://github.com/DotNetAnalyzers/StyleCopAnalyzers
-  - TODO: Cache
+  - Customized `StyleCop` linting implementation : https://github.com/DotNetAnalyzers/StyleCopAnalyzers
+  - TODO: Cache that rehydrates on startup using .NET's `Memory Cache` : https://learn.microsoft.com/en-us/dotnet/core/extensions/caching  
   - TODO: Automated registering of DI services
   - TODO: Authentication with JWT
+  - TODO: Model validation with `FluentValidation` : https://docs.fluentvalidation.net/en/latest/
+  - TODO: `gRPC` microservices with pub/sub communication using 
 
 ### MongoDB database 
-  - Website/API gathered content
+  - TODO: Website/API gathered content
 
 ### Sql Server Express database
-  - Background thread settings and reporting 
+  - TODO: Background thread settings and reporting 
 
 ### `Dockerfile` and `docker-compose.yml` files to stand up all resources locally
  
@@ -25,9 +30,10 @@ This is a mono-repo of a sample asynchronous n-tier system written with .NET 8 a
   - Http request retry policies
   - Backend Thread/service examples
   - Thread throttling examples
-  - 2 code-first gRPC microservices with pub/sub communication
+  - 2 code-first 
   - OpenAI service integration
   - Unit tests with xUnit
+  - React UI
 
 ## Running Locally
 
